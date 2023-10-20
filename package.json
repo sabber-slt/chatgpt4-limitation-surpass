@@ -1,0 +1,23 @@
+{
+  "name": "chatgpt-4-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sabber <developer@sabber.dev>",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.7",
+    "@types/node-cron": "^3.0.10",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "dev": "tsnd --respawn index.ts",
+    "build": "npm run tsc",
+    "tsc": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "node-cron": "^3.0.2",
+    "playwright-fluent": "^1.61.0"
+  }
+}
